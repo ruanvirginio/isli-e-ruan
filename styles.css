@@ -1,3 +1,35 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #envelope {
+    background-image: url('envelope-fechado.png'); /* Imagem do envelope aberto */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw; /* 50% da largura da tela */
+    height: 100vh; /* 50% da altura da tela */
+    cursor: pointer;
+    transition: background-image 3.5s ease;
+  }
+  
+  
+  
+  #invitation {
+    display: none;
+    padding: 20px; /* Ajuste o valor para alterar o tamanho do convite */
+    max-width: 100%; /* Adicione esta linha para garantir que o conteúdo não ultrapasse a largura máxima */
+    box-sizing: border-box; /* Adicione esta linha para incluir padding na largura total */
+    text-align: center;
+    color: #fff;
+    background-color: #333; /* Cor de fundo do convite */
+  }
+
+
 .popup {
     position: fixed;
     top: 50%;
