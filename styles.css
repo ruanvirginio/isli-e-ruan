@@ -1,47 +1,10 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  #envelope {
-    background-image: url('envelope-fechado.png'); /* Imagem do envelope aberto */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100vw; /* 50% da largura da tela */
-    height: 100vh; /* 50% da altura da tela */
-    cursor: pointer;
-    transition: background-image 3.5s ease;
-  }
-  
-  
-  
-  #invitation {
-    display: none;
-    padding: 20px; /* Ajuste o valor para alterar o tamanho do convite */
-    max-width: 100%; /* Adicione esta linha para garantir que o conteúdo não ultrapasse a largura máxima */
-    box-sizing: border-box; /* Adicione esta linha para incluir padding na largura total */
-    text-align: center;
-    color: #fff;
-    background-color: #333; /* Cor de fundo do convite */
-  }
-  
-  /* styles.css */
-
-#invitation {
-  background-color: white; /* Define o fundo como branco */
-  color: black; /* Define a cor do texto como preto */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    z-index: 999; /* Certifique-se de que o popup apareça acima de outros elementos */
 }
-
-#invitation a {
-  color: black; /* Define a cor do link como preto */
-  text-decoration: none; /* Remove a sublinhado padrão do link */
-}
-
-#invitation a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
-}
-
