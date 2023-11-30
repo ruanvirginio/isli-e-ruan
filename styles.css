@@ -14,7 +14,7 @@ body {
     width: 100vw; /* 50% da largura da tela */
     height: 100vh; /* 50% da altura da tela */
     cursor: pointer;
-    transition: background-image 1.5s ease;
+    transition: background-image 3.5s ease;
   }
   
   
