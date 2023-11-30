@@ -9,7 +9,7 @@ function openEnvelope() {
   setTimeout(function () {
     var envelopeImage = document.getElementById('envelopeImage');
     envelopeImage.addEventListener('click', redirectToPage);
-  }, 5000);
+  }, 1000);
 }
 
 function redirectToPage() {
