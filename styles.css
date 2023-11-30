@@ -7,7 +7,7 @@ body {
   }
   
   #envelope {
-    background-image: url('envelope-fechado.jpg'); /* Imagem do envelope aberto */
+    background-image: url('envelope-fechado.png'); /* Imagem do envelope aberto */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
