@@ -1,11 +1,18 @@
+// scripts.js
 function openEnvelope() {
   var envelope = document.getElementById('envelope');
 
-  // Troca a imagem do envelope aberto
-  envelope.style.backgroundImage = "url('envelope-aberto.jpg')"; /* Imagem do envelope aberto */
+  // Change the background image to the open envelope
+  envelope.style.backgroundImage = "url('envelope-aberto.jpg')";
 
-  // Após 5 segundos, abrir a nova aba
+  // After 5 seconds, open a new tab and call redirectToPage
   setTimeout(function () {
-    window.open('https://noivos.casar.com/isli-e-ruan', '_blank');
-  }, 5000); // 5000 milissegundos = 5 segundos
+    // window.open('https://noivos.casar.com/isli-e-ruan', '_blank');
+    redirectToPage(); // Call redirectToPage after opening the new tab
+  }, 5000);
+}
+
+function redirectToPage() {
+  // Redirect to the specified page
+  window.location.href = 'https://noivos.casar.com/isli-e-ruan';
 }
