@@ -3,12 +3,12 @@ function openEnvelope() {
   var envelope = document.getElementById('envelope');
 
   // Change the background image to the open envelope
-  envelope.style.backgroundImage = "url('envelope-aberto.jpg')";
+  envelope.style.backgroundImage = "none"; // Remove background image
 
-  // After 5 seconds, open a new tab and call redirectToPage
+  // After 5 seconds, add a click event listener to the image
   setTimeout(function () {
-    // window.open('https://noivos.casar.com/isli-e-ruan', '_blank');
-    redirectToPage(); // Call redirectToPage after opening the new tab
+    var envelopeImage = document.getElementById('envelopeImage');
+    envelopeImage.addEventListener('click', redirectToPage);
   }, 5000);
 }
 
